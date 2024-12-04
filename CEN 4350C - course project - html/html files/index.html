@@ -1,0 +1,181 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CEN 4350C - Course Project - html build</title>
+  <meta name="description" content=
+    "This is the course project for CEN 4350C. It is the landing page for the Key Style brand men's hair styling products.">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/mediaQueries.css">
+
+  <link rel="icon" href="images/PNG%20files/Favicon.png" sizes="any">
+</head>
+
+<body>
+  <header id="navBar" class="navBar">
+    <a class="headerLogoLink" href="/">
+      <div class="headerLogoWrapper">
+        <img class="navLogo" src="images/PNG%20files/Favicon.png">
+      </div>
+    </a>
+    <ul class="mq-display-none">
+      <li><a class="navElement navbarGrowOnHover underlineHover" href="/Shop.html">Shop</a></li>
+      <li><a class="navElement navbarGrowOnHover underlineHover" href="/Your-Style.html">Your Style</a></li>
+      <li><a class="navElement navbarGrowOnHover underlineHover" href="/About-Us.html">About Us</a></li>
+    </ul>
+    <nav class="navIcons" id="navIcons">
+      <div class="logo navbarGrowOnHover" id="account-icon">
+        <img src="images/SVG%20files/Account.svg" alt="account"/>
+      </div>
+      <div class="logo navbarGrowOnHover" style="position: relative;">
+        <a href="/cart" class="cart-img">
+          <img src="images/SVG%20files/Cart.svg" alt="cart">
+        </a>
+        <span class="cart-counter" id="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="login-popup" id="login-form">
+    <form action="" class="form-container" >
+      <h1>Login</h1>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" id="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="psw" required>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <div class="registration-container">
+      <button type="submit" class="btn" id="registration-popup">Sign Up</button>
+    </div>
+  </div>
+
+  <div class="registration-popup" id="registration-form">
+    <form action="/register" method="POST" class="form-container">
+      <h1>Unlock Your Style</h1>
+
+      <label for="first-name"><b>First Name</b></label>
+      <input type="text" placeholder="First" id="first-name" name="first-name" required>
+
+      <label for="last-name"><b>Last Name</b></label>
+      <input type="text" placeholder="Last" id="last-name" name="last-name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" id="registration-email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="registration-psw" name="password" required>
+
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="tag-line">
+    <span>BOLD</span>
+    <span>NATURAL</span>
+    <span>STYLE</span>
+  </div>
+
+  <div class="product-display-v2">
+    <div class="product fade-in-left">
+      <img src="images/PNG files/keyStyleProduct.png" class="product-img-left" alt="Product Image One">
+      <div class="product-details" id="product-1">
+        <h1 class="product-name"></h1>
+        <hr>
+        <p class="product-description" id="product-description-one" data-product-description="1"></p>
+        <div class="cost-and-cart">
+          <span class="product-price"></span>
+          <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product fade-in-left">
+      <img src="images/PNG files/keyStyleProduct.png" class="product-img-left" alt="Product Image Two">
+      <div class="product-details" id="product-2">
+        <h1 class="product-name">Pomade</h1>
+        <hr>
+        <p class="product-description" data-product-description="2">foo fie fee foo</p>
+        <div class="cost-and-cart">
+          <span class="product-price">PRODUCT PRICE</span>
+          <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product fade-in-left">
+      <img src="images/PNG files/keyStyleProduct.png" class="product-img-left" alt="Product Image Three">
+      <div class="product-details" id="product-3">
+        <h1 class="product-name">Grease</h1>
+        <hr>
+        <p class="product-description" data-product-description="3">foo fie fee foo</p>
+        <div class="cost-and-cart">
+          <span class="product-price">PRODUCT PRICE</span>
+          <button class="add-to-cart" data-product-id="3">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="page-split">
+
+  <h1 class="why-key-style-h1">Why Key Style?</h1>
+  <div class="why-key-style">
+    <img src="images/PNG files/TempInsert.jpg" alt="horribly drawn image"/>
+    <p>At key style it is our mission to ensure every man can look and feel his best.
+      To this, Key style delivers premier men's and fashion essentials to help you perfect your look from head to toe.
+      We believe Key Style is the difference maker in a man's style choice whether they are improving their everyday style
+      or dressing for who they want to be with our line of expressive products for any men's grooming needs.
+      With Key Style, it's about looking good inside and out and finding the key to your confidence.
+    </p>
+
+  </div>
+
+  <div class="newsletter-signup-container">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form class="newsletter-signup-form" id="newsletter-signup-form">
+      <input type="email" id="email-input" placeholder="Enter your email" required>
+      <button type="submit" id="newsletter-button">Subscribe</button>
+    </form>
+  </div>
+
+  <div class="alternate-products-container">
+    <h1>Additional Care</h1>
+    <div class="alternate-product-display">
+      <div class="alternate-product">
+        <a href="/combAlt">
+          <img src="images/PNG%20files/comb.png" alt="alt-1-img"/>
+          <h1>Styling Comb</h1>
+        </a>
+      </div>
+      <div class="alternate-product" id="hairCreamAlt">
+        <a href="/gelAlt">
+          <img src="images/PNG%20files/hairCreamAltProduct.png" id="gel-alt-img" alt="alt-3-img">
+          <h1>Hair Gel</h1>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <!--  webpage footer container-->
+  <div id="pageFooter" style="background: #011627">
+    <ul class="footerContent">
+        <li><a href="/contact">contact</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/jobs">jobs</a></li>
+    </ul>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
